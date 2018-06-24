@@ -133,7 +133,7 @@ class RestApiClient
         $auth = sprintf('%s:%s', $this->user, $this->pass);
         $headers = array(
             'Host: ' . $this->getPeerIdentity(),
-            // 'Connection: close'
+            'Connection: close'
         );
 
         if (! $raw) {
